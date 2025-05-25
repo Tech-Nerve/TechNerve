@@ -98,7 +98,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-gray-600 dark:text-gray-300">info@techboyz.tech</p>
+                  <p className="text-gray-600 dark:text-gray-300">technerve@hotmail.com</p>
                 </div>
               </div>
               
@@ -108,7 +108,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Office</h3>
-                  <p className="text-gray-600 dark:text-gray-300">123 Tech Street<br />San Francisco, CA 94107</p>
+                  <p className="text-gray-600 dark:text-gray-300">Accra</p>
                 </div>
               </div>
             </div>
