@@ -84,18 +84,18 @@ const Footer = () => {
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
                 <MapPin size={20} className="text-gray-400 mt-0.5 flex-shrink-0" />
-                <span className="text-gray-400">123 Tech Street, San Francisco, CA 94107</span>
+                <span className="text-gray-400">Accra</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={20} className="text-gray-400 flex-shrink-0" />
                 <a href="tel:+14155552671" className="text-gray-400 hover:text-white transition-colors">
-                  +1 (415) 555-2671
+                  +233 53 193 2399
                 </a>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-gray-400 flex-shrink-0" />
                 <a href="mailto:info@techboyz.tech" className="text-gray-400 hover:text-white transition-colors">
-                  info@techboyz.tech
+                  technerve@hotmail.com
                 </a>
               </li>
             </ul>
@@ -104,7 +104,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-800 text-center md:flex md:justify-between md:text-left">
           <p className="text-gray-400 text-sm">
-            &copy; {new Date().getFullYear()} TechBoyz. All rights reserved.
+            &copy; {new Date().getFullYear()} TechNerve. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <ul className="flex flex-wrap justify-center md:justify-end space-x-4 text-sm text-gray-400">
