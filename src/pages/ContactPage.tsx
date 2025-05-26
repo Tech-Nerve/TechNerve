@@ -109,7 +109,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-600 dark:text-gray-300">+233 53 193-2399</p>
+                  <p className="text-gray-600 dark:text-gray-300">+233 53 193-2399 / +233 55 968-1714</p>
                 </div>
               </div>
               
@@ -119,7 +119,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Email</h3>
-                  <p className="text-gray-600 dark:text-gray-300">technerve@hotmail.com</p>
+                  <p className="text-gray-600 dark:text-gray-300">tech.nerve@hotmail.com</p>
                 </div>
               </div>
               
