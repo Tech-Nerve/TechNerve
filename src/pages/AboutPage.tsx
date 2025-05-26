@@ -30,10 +30,10 @@ const AboutPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-700 dark:text-gray-300">
               <p>
-                TechNerve was founded in 2023 by two friends with a shared vision: to create a tech company that combines technical excellence with a personalized approach to client service.
+                TechNerve was founded in 2024 by two friends with a shared vision: to create a tech company that combines technical excellence with a personalized approach to client service.
               </p>
               <p>
-                After years of working for large tech corporations, we noticed a gap in the market. Small and medium-sized businesses needed tech solutions that were both sophisticated and accessible, with personal attention that bigger agencies couldn't provide.
+                After times of working for large tech corporations, we noticed a gap in the market. Small and medium-sized businesses needed tech solutions that were both sophisticated and accessible, with personal attention that bigger agencies couldn't provide.
               </p>
               <p>
                 We joined forces to create TechNerve, bringing together our complementary skills in development, design, and business strategy. Since then, we've helped dozens of businesses transform their digital presence and internal systems.
@@ -53,7 +53,7 @@ const AboutPage = () => {
               className="rounded-lg shadow-lg object-cover h-[500px] w-full"
             />
             <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
-              <p className="font-semibold text-lg">Founded in 2023</p>
+              <p className="font-semibold text-lg">Founded in 2024</p>
               <p className="text-gray-600 dark:text-gray-300">With a passion for technology</p>
             </div>
           </div>

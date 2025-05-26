@@ -109,7 +109,7 @@ const ContactPage = () => {
                 </div>
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-600 dark:text-gray-300">+1 (415) 555-2671</p>
+                  <p className="text-gray-600 dark:text-gray-300">+233 53 193-2399</p>
                 </div>
               </div>
               
@@ -316,7 +316,7 @@ const ContactPage = () => {
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="bg-white/90 dark:bg-gray-900/90 p-6 rounded-lg shadow-lg max-w-md text-center">
                 <h3 className="font-bold text-lg mb-2">TechNerve Headquarters</h3>
-                <p className="text-gray-700 dark:text-gray-300">123 Tech Street, San Francisco, CA 94107</p>
+                <p className="text-gray-700 dark:text-gray-300">Accra</p>
                 <Button 
                   href="https://maps.google.com" 
                   className="mt-4"
