@@ -32,19 +32,34 @@ const ContactPage = () => {
     }));
   };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
     setSubmitError('');
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      
-      // Reset form after showing success message
-      setTimeout(() => {
-        setSubmitSuccess(false);
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          subject: formData.subject,
+          message: formData.message,
+          services: formData.services.join(', ')
+        })
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setSubmitSuccess(true);
+        // Reset form after successful submission
         setFormData({
           name: '',
           email: '',
@@ -53,8 +68,14 @@ const ContactPage = () => {
           message: '',
           services: []
         });
-      }, 5000);
-    }, 1500);
+      } else {
+        throw new Error(result.message || 'Something went wrong');
+      }
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : 'Failed to send message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -268,6 +289,7 @@ const ContactPage = () => {
                       )}
                     </button>
                   </div>
+                  <input type="hidden" name="from_name" value="Tech Nerve"></input>
                 </form>
               )}
             </div>
@@ -293,7 +315,7 @@ const ContactPage = () => {
             />
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="bg-white/90 dark:bg-gray-900/90 p-6 rounded-lg shadow-lg max-w-md text-center">
-                <h3 className="font-bold text-lg mb-2">TechBoyz Headquarters</h3>
+                <h3 className="font-bold text-lg mb-2">TechNerve Headquarters</h3>
                 <p className="text-gray-700 dark:text-gray-300">123 Tech Street, San Francisco, CA 94107</p>
                 <Button 
                   href="https://maps.google.com" 

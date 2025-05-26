@@ -1,33 +1,36 @@
 import { Github, Linkedin, Mail, Twitter } from 'lucide-react';
 import Section from '../components/ui/Section';
 import Card from '../components/ui/Card';
+import binaryImage from '../assets/binary.jpg';
+import vincentImage from '../assets/vincent.jpg';
+import vince from '../assets/v1.jpg'
 
 const TeamPage = () => {
   const teamMembers = [
     {
-      name: 'Alex Johnson',
-      role: 'Co-Founder & Lead Developer',
-      image: 'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Alex has over 10 years of experience in web and mobile development. With a background in computer science and a passion for clean code, he leads our technical implementations and architecture decisions.',
-      skills: ['Full-Stack Development', 'System Architecture', 'DevOps', 'React', 'Node.js', 'Cloud Infrastructure'],
+      name: 'Vincent Acquah',
+      role: 'Co-Founder',
+      image: vincentImage,
+      bio: 'Vince is a software engineer and cybersecurity enthusiast with a strong focus on building systems that are both secure and practical. At the University of Ghana, he led the development of the IAC System for Balme Library, streamlining student access and analytics. He also built a full inventory management system for Vobiss Solutions, tailored for managing networking equipment and tools.',
+      skills: ['Node.js', 'PostgreSQL', 'Python', 'React', 'JavaScript', 'Tailwind CSS', 'Stellar Blockchain', 'AI Integration'],
       social: {
         twitter: 'https://twitter.com',
         linkedin: 'https://linkedin.com',
         github: 'https://github.com',
-        email: 'mailto:alex@techboyz.tech'
+        email: 'mailto:mujahidshahid72@gmail.com'
       }
     },
     {
-      name: 'Michael Rivera',
-      role: 'Co-Founder & UX/Design Lead',
-      image: 'https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-      bio: 'Michael brings creative vision to our projects with his expertise in UX design and digital marketing. His background in psychology helps him understand user behavior and create intuitive interfaces.',
-      skills: ['UI/UX Design', 'Digital Marketing', 'Project Management', 'Figma', 'User Research', 'Brand Strategy'],
+      name: 'Mujahid Shahid',
+      role: 'Co-Founder',
+      image: binaryImage,
+      bio: 'Mujahid is a passionate software developer with hands-on experience in building impactful web and mobile applications. With a strong foundation in computer science and a practical approach to solving real-world problems, he has led and contributed to a range of projects spanning e-learning platforms, event apps, payroll systems, and AI-powered tools. ',
+      skills: ['Full-Stack Development', '.Net', 'Blazor', 'React', 'React Native', 'Next.js', 'Wordpress', 'Database Infrastructure'],
       social: {
         twitter: 'https://twitter.com',
         linkedin: 'https://linkedin.com',
         github: 'https://github.com',
-        email: 'mailto:michael@techboyz.tech'
+        email: 'mailto:mujahidshahid72@gmail.com'
       }
     },
   ];
@@ -40,7 +43,7 @@ const TeamPage = () => {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Meet Our Team</h1>
             <p className="text-xl text-gray-300">
-              Get to know the passionate tech professionals behind TechBoyz.
+              Get to know the passionate tech professionals behind TechNerve.
             </p>
           </div>
         </div>
@@ -143,7 +146,7 @@ const TeamPage = () => {
             We're always looking to collaborate with talented freelancers and specialists.
           </p>
           <a 
-            href="mailto:careers@techboyz.tech" 
+            href="mailto:careers@technerve.tech" 
             className="inline-flex items-center justify-center rounded-md text-sm font-medium px-6 py-3 bg-white text-primary-600 hover:bg-white/90 transition-colors"
           >
             Get in Touch

@@ -2,6 +2,13 @@ import { Check, Code, Database, FileCode, Globe, Laptop, Smartphone, Zap } from 
 import Section from '../components/ui/Section';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import { motion } from 'framer-motion';
+import consult from '../assets/consult.jpg';
+import websiteImage from '../assets/website.jpg';
+import mobileAppImage from '../assets/mobile_app.jpg';
+import uiuxImage from '../assets/uiux.jpg';
+import softwareImage from '../assets/software.jpg';
+import databaseImage from '../assets/database.jpg';
 
 const ServicesPage = () => {
   const services = [
@@ -16,7 +23,8 @@ const ServicesPage = () => {
         'Content management systems',
         'Website maintenance and support'
       ],
-      technologies: ['React', 'Next.js', 'Vue', 'Node.js', 'PHP', 'WordPress']
+      technologies: ['React', 'Next.js',  'Node.js', 'WordPress'],
+      image: websiteImage
     },
     {
       icon: <Smartphone size={32} />,
@@ -29,7 +37,8 @@ const ServicesPage = () => {
         'App redesign and optimization',
         'Ongoing maintenance and updates'
       ],
-      technologies: ['React Native', 'Flutter', 'Swift', 'Kotlin']
+      technologies: ['React Native', 'Expo'],
+      image: mobileAppImage
     },
     {
       icon: <Zap size={32} />,
@@ -42,7 +51,8 @@ const ServicesPage = () => {
         'Usability testing',
         'Design systems'
       ],
-      technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision']
+      technologies: ['Figma', 'Adobe XD', 'Sketch', 'InVision'],
+      image: uiuxImage
     },
     {
       icon: <Code size={32} />,
@@ -55,7 +65,8 @@ const ServicesPage = () => {
         'Software architecture design',
         'Quality assurance and testing'
       ],
-      technologies: ['Python', 'Java', 'C#', '.NET', 'TypeScript']
+      technologies: ['Python', 'C#', '.NET', 'TypeScript'],
+      image: softwareImage
     },
     {
       icon: <Database size={32} />,
@@ -68,7 +79,8 @@ const ServicesPage = () => {
         'Security implementation',
         'Performance optimization'
       ],
-      technologies: ['SQL', 'NoSQL', 'AWS', 'Azure', 'Firebase']
+      technologies: ['SQL', 'NoSQL', 'AWS', 'Azure', 'Firebase', 'Supabase'],
+      image: databaseImage
     },
     {
       icon: <Laptop size={32} />,
@@ -81,7 +93,8 @@ const ServicesPage = () => {
         'IT roadmap planning',
         'Security audits'
       ],
-      technologies: ['Project Management', 'Risk Assessment', 'Cost Analysis']
+      technologies: ['Project Management', 'Risk Assessment', 'Cost Analysis'],
+      image: consult
     }
   ];
 
@@ -146,7 +159,7 @@ const ServicesPage = () => {
               
               <div className={index % 2 === 1 ? "order-2 lg:order-1" : ""}>
                 <img 
-                  src={`https://images.pexels.com/photos/${7000000 + index * 100}/pexels-photo-${7000000 + index * 100}.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2`.replace('7000000', '3182746').replace('7000100', '3861969').replace('7000200', '4050315').replace('7000300', '3861943').replace('7000400', '7567556').replace('7000500', '3184465')}
+                  src={service.image}
                   alt={service.title} 
                   className="rounded-lg shadow-lg w-full h-80 object-cover"
                 />

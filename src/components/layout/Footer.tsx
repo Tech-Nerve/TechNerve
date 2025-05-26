@@ -8,7 +8,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold mb-4 text-white">TechBoyz</h3>
+            <h3 className="text-xl font-bold mb-4 text-white">TechNerve</h3>
             <p className="text-gray-400 max-w-xs">
               Solving tech challenges with creativity and precision. We build innovative solutions for businesses of all sizes.
             </p>
@@ -94,7 +94,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={20} className="text-gray-400 flex-shrink-0" />
-                <a href="mailto:info@techboyz.tech" className="text-gray-400 hover:text-white transition-colors">
+                <a href="mailto:info@technerve.tech" className="text-gray-400 hover:text-white transition-colors">
                   technerve@hotmail.com
                 </a>
               </li>

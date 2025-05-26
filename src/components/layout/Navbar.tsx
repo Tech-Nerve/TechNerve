@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Menu, X, Laptop, Code } from 'lucide-react';
+import { Menu, X, Laptop, Code, Bot } from 'lucide-react';
 
 const navLinks = [
   { name: 'Home', path: '/' },
@@ -51,7 +51,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink to="/" className="flex items-center space-x-2">
           <span className="flex items-center justify-center bg-primary-600 text-white p-1.5 rounded-md">
-            <Code size={24} />
+            <Bot size={24} />
           </span>
           <span className="font-bold text-xl tracking-tight">
             Tech<span className="text-primary-600">Nerve</span>

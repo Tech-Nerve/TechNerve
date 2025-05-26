@@ -15,7 +15,7 @@ const AboutPage = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About TechBoyz</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About TechNerve</h1>
             <p className="text-xl text-gray-300">
               We're a tech solutions duo passionate about solving complex problems through innovative technology.
             </p>
@@ -30,16 +30,16 @@ const AboutPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Story</h2>
             <div className="space-y-4 text-gray-700 dark:text-gray-300">
               <p>
-                TechBoyz was founded in 2023 by two friends with a shared vision: to create a tech company that combines technical excellence with a personalized approach to client service.
+                TechNerve was founded in 2023 by two friends with a shared vision: to create a tech company that combines technical excellence with a personalized approach to client service.
               </p>
               <p>
                 After years of working for large tech corporations, we noticed a gap in the market. Small and medium-sized businesses needed tech solutions that were both sophisticated and accessible, with personal attention that bigger agencies couldn't provide.
               </p>
               <p>
-                We joined forces to create TechBoyz, bringing together our complementary skills in development, design, and business strategy. Since then, we've helped dozens of businesses transform their digital presence and internal systems.
+                We joined forces to create TechNerve, bringing together our complementary skills in development, design, and business strategy. Since then, we've helped dozens of businesses transform their digital presence and internal systems.
               </p>
               <p>
-                Today, TechBoyz continues to grow, but our founding principles remain the same: deliver exceptional tech solutions with a personal touch, ensuring our clients feel supported at every step of their digital journey.
+                Today, TechNerve continues to grow, but our founding principles remain the same: deliver exceptional tech solutions with a personal touch, ensuring our clients feel supported at every step of their digital journey.
               </p>
             </div>
             <Button href="/team" className="mt-8">
@@ -49,7 +49,7 @@ const AboutPage = () => {
           <div className="relative">
             <img 
               src="https://images.pexels.com/photos/3182746/pexels-photo-3182746.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-              alt="TechBoyz founders" 
+              alt="TechNerve founders" 
               className="rounded-lg shadow-lg object-cover h-[500px] w-full"
             />
             <div className="absolute -bottom-6 -left-6 bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
@@ -65,7 +65,7 @@ const AboutPage = () => {
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Mission & Values</h2>
           <p className="text-gray-600 dark:text-gray-300">
-            At the core of TechBoyz are the principles that guide our work and relationships.
+            At the core of TechNerve are the principles that guide our work and relationships.
           </p>
         </div>
 
@@ -141,7 +141,7 @@ const AboutPage = () => {
         <div className="text-center max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Work Together?</h2>
           <p className="text-lg mb-8 text-white/90">
-            Let's discuss how TechBoyz can help your business reach its technology goals.
+            Let's discuss how TechNerve can help your business reach its technology goals.
           </p>
           <Button 
             href="/contact" 
